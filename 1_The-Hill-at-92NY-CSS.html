@@ -14,7 +14,7 @@
 	.hill-wrapper1
 		.scrollable-area__navigation--styled-example
 		.scrollable-area__navigation {
-		background-color: var(--92nymagenta);
+		background-color: var(--92nyblue);
 	}
 
 	.hill-wrapper1 .scrollable-area__section-inner.u-tone-background-dark {
@@ -46,7 +46,7 @@
 		.program-card__title,
 	.hill-wrapper1 .program-card.is-type-jewish-life .program-card__title,
 	.hill-wrapper1 .program-card__title a {
-		color: var(--white);
+		color: var(--black);
 	}
 
 	.hill-wrapper1 .program-card .program-card__body,
@@ -55,18 +55,18 @@
 		.program-card.is-type-continuing-education
 		.program-card__body,
 	.hill-wrapper1 .program-card.is-type-jewish-life .program-card__body {
-		border-color: var(--92nymagenta);
+		border-color: var(--92nyblue);
 	}
 
 	.hill-wrapper1 .program-card,
 	.hill-wrapper1 .program-card.is-type-talks-readings,
 	.hill-wrapper1 .program-card.is-type-continuing-education,
 	.hill-wrapper1 .program-card.is-type-jewish-life {
-		border-color: var(--92nymagenta);
-		background: var(--92nymagenta);
+		border-color: var(--92nyblue);
+		background: var(--92nyblue);
 	}
 
-	.hill-wrapper1 .program-card:hover,
+	.hill-wrapper1,
 	.hill-wrapper1 .program-card.is-type-talks-readings:hover,
 	.hill-wrapper1 .program-card.is-type-continuing-education:hover,
 	.hill-wrapper1 .program-card.is-type-jewish-life:hover {
@@ -83,7 +83,7 @@
 	.hill-wrapper1
 		.program-card.is-type-jewish-life:hover
 		.program-card__details {
-		color: var(--white);
+		color: var(--black);
 	}
 
 	.hill-wrapper1 .program-card .btn,
@@ -94,9 +94,9 @@
 		color: var(--black);
 	}
 
-	.program-card:hover .program-card__actions .btn {
-		background-color: var(--92nymagenta);
-		color: var(--white);
+	.program-card__actions .btn {
+		background-color: var(--92nyblue);
+		color: var(--black);
 	}
 
 	.hill-wrapper1 .btn:hover {
@@ -104,13 +104,17 @@
 	}
 
 	.hill-wrapper1 .a-grid-profile__avatar {
-		border: 4px solid var(--92nymagenta);
+		border: 4px solid var(--92nyblue);
 	}
 
 	@media (min-width: 50em) {
 		.profile-panel__description--full {
 			display: block;
 		}
+	}
+
+	.program-card:hover .program-card__body a, .program-card:hover .program-card__title a {
+		color: #000 !important;
 	}
 
 	.hill-wrapper2 .instructor-panel {
@@ -185,8 +189,17 @@
 		font-size: 18px;
 	}
 	.program-card:hover .program-card__actions .btn {
-		background: #000 !important;
+		background: #fff !important;
 	}
+	.hill-wrapper1 .program-card:hover {
+		background: #fff !important;
+	}
+
+	.program-card:hover {
+    background: #fff;
+	color: #000 !important;
+}
+
 
 	.program-card__actions {
 		visibility: visible !important;
@@ -201,7 +214,7 @@
 
 	#p_lt_ctl01_plcNotExist_p_lt_ctl05_pageContentHidden_ucEditableText_widget1_ctl00_rpt_Grid_ctl01_hl_giMoreInfo:hover,
 	#p_lt_ctl01_plcNotExist_p_lt_ctl05_pageContentHidden_ucEditableText_widget1_ctl00_rpt_Grid_ctl01_hl_giBuyTickets:hover {
-		background: #990d61 !important;
+		background: var(--92nyblue) !important;
 		color: #fff;
 	}
 
@@ -291,6 +304,10 @@ background: #000 !important;
 	/*center belfar logo*/
 	.belfar-logo {
 		margin: 0 auto;
+	}
+	/*hill card control*/
+	.hill-header, .host-block li {
+		color: var(--black);
 	}
 
 	@media screen and (min-width: 1920px) {
